@@ -1,0 +1,135 @@
+/* Font and general styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black !important;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* Header layout */
+header {
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between; /* Espace entre le titre et le menu */
+    align-items: center; /* Alignement vertical au centre */
+    padding: 10px 20px; /* Pour ajouter un peu d'espace */
+    background-color: #272727; /* Couleur de fond (optionnelle) */
+}
+
+
+.logo h1 a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #7700ff; /* Couleur initiale du titre */
+    cursor: pointer; /* Change le curseur pour indiquer qu'il est interactif */
+    padding: 5px 10px; /* Ajoute un peu d'espace autour du lien */
+    border: 2px solid transparent; /* Bordure invisible initialement */
+    border-radius: 5px; /* Coins arrondis */
+    transition: all 0.3s ease; /* Effet de transition fluide */
+}
+/* Logo container */
+.logo {
+    display: flex; /* Aligne le titre et l'image côte à côte */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    transition: all 0.3s ease; /* Animation fluide pour les changements */
+    transition: transform 0.5s;
+}
+
+.logo img {
+    width: 70px; /* Taille de l'image (ajustez selon vos besoins) */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 20px; /* Coins arrondis */
+    margin-right: 10px; /* Espacement entre l'image et le titre */
+}
+
+.logo h1 {
+    margin: 0; /* Supprime les marges par défaut */
+    font-size: 1.5rem; /* Taille de la police */
+    color: #7700ff; /* Couleur initiale du titre */
+    cursor: pointer; /* Change le curseur pour indiquer qu'il est interactif */
+    padding: 5px 10px; /* Ajoute un peu d'espace autour du titre */
+    border: 2px solid transparent; /* Bordure invisible initialement */
+    border-radius: 5px; /* Coins arrondis */
+    transition: all 0.3s ease; /* Effet de transition fluide */
+    margin-left: -20px;
+}
+
+.logo:hover{
+    transform: scale(1.1); /* Agrandit légèrement le titre */
+}
+
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    list-style: none; /* Supprime les puces */
+    margin: 0; /* Supprime la marge */
+    padding: 0; /* Supprime le padding */
+}
+
+nav ul li {
+    margin-left: 20px; /* Espacement entre les liens */
+}
+
+nav ul li a {
+    display: inline-block; /* Nécessaire pour que la boîte englobe le texte */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #ffffff; /* Couleur des liens */
+    font-size: 1rem; /* Taille de la police des liens */
+    cursor: pointer;
+    padding: 10px 15px; /* Espacement intérieur pour encadrer */
+    border: 2px solid #ffffff; /* Bordure autour des liens */
+    border-radius: 5px; /* Coins arrondis */
+    transition: all 0.3s ease; /* Animation fluide pour les changements */
+    transition: transform 0.5s;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #fff; /* Change la couleur du texte */
+    background-color: #7700ff; /* Change la couleur de fond */
+    border-color: #ffffff; /* Change la couleur de la bordure */
+    transform: scale(1.5); /* Agrandit légèrement la boîte */
+}
+/* Footer styles */
+footer {
+    background-color: #272727; /* Couleur de fond identique au header */
+    color: #ffffff; /* Texte blanc */
+    padding: 20px 0; /* Espace intérieur vertical */
+    text-align: center; /* Centre le texte */
+    border-radius: 5px; /* Coins arrondis */
+    transition: all 0.3s ease; /* Animation fluide pour les changements */
+}
+
+/* Contenu du footer */
+.footer-content {
+    max-width: 1200px; /* Limite la largeur pour un contenu centré */
+    margin: 0 auto; /* Centre horizontalement */
+    padding: 0 20px; /* Ajoute un peu de padding latéral */
+}
+
+/* Navigation dans le footer */
+footer nav ul {
+    display: flex; /* Aligne les éléments sur une ligne */
+    justify-content: center; /* Centre les liens horizontalement */
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding */
+    margin: 10px 0 0; /* Espace au-dessus de la liste */
+}
+
+footer nav ul li {
+    margin: 0 10px; /* Espacement horizontal entre les liens */
+}
+
+footer nav ul li a {
+    color: #ffffff; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 0.9rem; /* Taille de la police */
+    transition: all 0.3s ease; /* Animation fluide pour les changements */
+    transition: transform 0.5s;
+}
+
+/* Effet hover pour les liens */
+footer nav ul li a:hover {
+    color: #ffffff; /* Change la couleur au survol */
+    transform: scale(1.1); /* Agrandit légèrement le titre */
+}
+
