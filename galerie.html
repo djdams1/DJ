@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie | DJ Dam's</title>
-    <link rel="stylesheet" href="contacte.css">
+    <link rel="stylesheet" href="galerie.css">
     <link rel="stylesheet" href="structure.css">
 </head>
 <body>
@@ -22,10 +22,37 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <section class="gallery">
+            <h2>Galerie de Photos et vidéos</h2>
 
-
+            <!-- Grille d'images -->
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="src/img/Designer(5)-Photoroom.png" alt="Photo 1" class="photo-thumb">
+                </div>
+                <div class="photo-item">
+                    <img src="src/img/Designer(5)-Photoroom.png" alt="Photo 2" class="photo-thumb">
+                </div>
+                <div class="photo-item">
+                    <img src="src/img/Designer(5)-Photoroom.png" alt="Photo 3" class="photo-thumb">
+                </div>
+                <div class="photo-item">
+                    <img src="src/img/Designer(5)-Photoroom.png" alt="Photo 4" class="photo-thumb">
+                </div>
+                
+                <!-- Ajoute d'autres images ici -->
+            </div>
+        </section>
     </main>
+
+    <!-- Lightbox modale -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Image agrandie">
+    </div>
+
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 DJ Dam's. Tous droits réservés.</p>
@@ -38,5 +65,7 @@
             </nav>
         </div>
     </footer>
+
+    <script src="/js/galerie.js"></script>
 </body>
 </html>

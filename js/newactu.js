@@ -23,8 +23,7 @@ async function loadNews() {
                 newsItem.innerHTML = `
                     <h3>${article.title}</h3>
                     <p><strong>Date : </strong>${article.date}</p>
-                    <p>${article.content}</p>
-                    <a href="${article.link}" target="_blank">Lire la suite</a>
+                    <p>${article.txt}</p>
                 `;
                 container.appendChild(newsItem);
             });

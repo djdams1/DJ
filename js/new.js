@@ -22,7 +22,7 @@ async function loadNews() {
                 <h3>${article.title}</h3>
                 <p><strong>Date : </strong>${article.date}</p>
                 <p>${article.content}</p>
-                <a href="${article.link}" target="_blank">Lire la suite</a>
+                <a href="${article.link}">Lire la suite</a>
             `;
 
             container.appendChild(newsItem);

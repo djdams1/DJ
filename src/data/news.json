@@ -1,27 +1,11 @@
 [
     {
         "title": "Mise à jour du site",
-        "date": "2024-11-18",
-        "content": "Le site a été mis à jour avec de nouvelles fonctionnalités !",
-        "link": "actu.html"
-    },
-    {
-        "title": "Lancement de la nouvelle playlist",
-        "date": "2024-11-22",
-        "content": "Découvrez ma dernière playlist avec des mixes exclusifs !",
-        "link": "actu.html"
-    },
-    {
-        "title": "Événement à venir",
-        "date": "2024-12-15",
-        "content": "Retrouvez-moi en live à Paris pour un événement exceptionnel.",
-        "link": "actu.html"
-    },
-    {
-        "title": "Nouvel article de blog",
-        "date": "2024-11-20",
-        "content": "J'ai publié un nouvel article sur ma passion pour le DJing. Lisez-le ici.",
+        "date": "23-11-2024",
+        "txt": "Le site a été mis à jour avec de nouvelles fonctionnalités !",
+        "content": "Le site a été mis à jour",
         "link": "actu.html"
     }
+
 
 ]
