@@ -1,0 +1,98 @@
+#search-bar {
+    margin-bottom: 20px;
+    text-align: center;
+}
+main {
+    color:white;
+}
+#search-input {
+    width: 20%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+#news {
+    margin: 20px;
+    padding: 10px;
+    color: white;
+}
+#news h2 {
+    margin: 0 0 15px;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+.news-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #333333;
+}
+
+.news-item h3 {
+    margin: 0 0 10px;
+}
+
+.news-item p {
+    margin: 5px 0;
+}
+
+.news-item a {
+    color: #007BFF;
+    
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+/* Logo de loup */
+#search-toggle {
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#search-toggle img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    filter: invert(1);
+}
+
+#search-toggle img:hover {
+    transform: scale(1.1); /* Zoom léger sur le logo au survol */
+}
+
+/* Barre de recherche */
+#search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0; /* Complètement invisible par défaut */
+    transform: translateY(-10px); /* Légèrement déplacée vers le haut */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Effet de transition */
+    pointer-events: none; /* Désactive l'interaction quand invisible */
+}
+
+#search-bar.visible {
+    opacity: 1; /* Complètement visible */
+    transform: translateY(0); /* Position normale */
+    pointer-events: auto; /* Réactive l'interaction */
+}
+
+#search-bar.hidden {
+    opacity: 0; /* Invisible */
+    transform: translateY(-10px); /* Retour à la position masquée */
+    pointer-events: none; /* Désactive l'interaction */
+}
+#search-input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

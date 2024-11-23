@@ -1,0 +1,36 @@
+#news {
+    margin: 20px;
+    padding: 10px;
+    color: #ffffff;
+}
+#news h2 {
+    margin: 0 0 15px;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+.news-item {
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #333333;
+}
+
+.news-item h3 {
+    margin: 0 0 10px;
+}
+
+.news-item p {
+    margin: 5px 0;
+}
+
+.news-item a {
+    color: #007BFF;
+    
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}

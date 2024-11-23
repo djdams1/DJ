@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | DJ Dam's</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Actu| DJ Dam's</title>
+    <link rel="stylesheet" href="actu.css">
     <link rel="stylesheet" href="structure.css">
 </head>
 <body>
@@ -24,10 +24,20 @@
     </header>
     <main>
         <section id="news">
-            <h2>A la une</h2>
+            <h2>Actualités</h2>
+            <!-- Logo pour afficher/masquer la barre de recherche -->
+            <div id="search-toggle">
+                <img src="./src/img/109859.png" alt="Logo Loup" id="loup-logo">
+            </div>
+            <!-- Barre de recherche (initialement masquée) -->
+            <div id="search-bar" class="hidden">
+                <input type="text" id="search-input" placeholder="Rechercher une actualité...">
+            </div>
             <div id="news-container"></div>
         </section>
     </main>
+    
+    
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 DJ Dam's. Tous droits réservés.</p>
@@ -40,6 +50,6 @@
             </nav>
         </div>
     </footer>
-    <script src="/js/new.js"></script>
+    <script src="/js/newactu.js"></script>
 </body>
 </html>
