@@ -80,3 +80,91 @@
         font-size: 0.9rem; /* Réduit la taille de la police du lien */
     }
 }
+
+/* Style du carrousel */
+#carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-bottom-left-radius: 10px; /* Radius pour le coin inférieur gauche */
+    border-bottom-right-radius: 10px; /* Radius pour le coin inférieur droit */
+    background: #fff;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Boutons de navigation */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media Queries pour le carrousel */
+@media screen and (max-width: 768px) {
+    #carousel {
+        height: 300px; /* Réduit la hauteur sur les petits écrans */
+    }
+
+    .carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem; /* Réduit la taille des boutons */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #carousel {
+        height: 200px; /* Réduit encore plus la hauteur sur les écrans très petits */
+    }
+
+    .carousel-btn {
+        width: 25px;
+        height: 25px;
+        font-size: 1rem; /* Réduit davantage la taille des boutons */
+    }
+}

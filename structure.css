@@ -1,7 +1,10 @@
 /* Font and general styles */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: black !important;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fond sombre pour un contraste agréable */
+    color: #fff; /* Texte en blanc */
 }
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
