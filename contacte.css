@@ -1,6 +1,3 @@
-main{
-    color : white;
-}
 /* Global Styles */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -8,6 +5,10 @@ body {
     padding: 0;
     background-color: #1a1a1a; /* Fond sombre pour un contraste agréable */
     color: #fff; /* Texte en blanc */
+}
+
+main {
+    color: white;
 }
 
 /* Formulaire de contact */
@@ -106,9 +107,67 @@ form {
         opacity: 1;
     }
 }
-.obli{
+
+.obli {
     color: #7700ff;
     font-size: 70%;
     margin-bottom: 10px;
     text-align: center;
 }
+
+/* Media Queries pour rendre le formulaire responsive */
+
+/* Sur les petits écrans mobiles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    form {
+        padding: 20px; /* Réduire le padding */
+        margin: 20px auto; /* Réduire la marge autour du formulaire */
+        max-width: 90%; /* Réduire la largeur maximale du formulaire */
+    }
+
+    h3.in1 {
+        font-size: 1.4rem; /* Réduire la taille du titre */
+    }
+
+    input[type="email"],
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 0.9rem; /* Réduire la taille de la police dans les champs de saisie */
+    }
+
+    button[type="submit"] {
+        font-size: 1rem; /* Réduire la taille du texte du bouton */
+        padding: 10px 15px; /* Réduire le padding du bouton */
+    }
+
+    .obli {
+        font-size: 60%; /* Réduire la taille de la police pour le texte en bas du formulaire */
+    }
+}
+
+/* Sur les tablettes (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 25px; /* Réduire légèrement le padding */
+        margin: 30px auto; /* Espacement plus réduit sur les tablettes */
+        max-width: 80%; /* Réduire la largeur maximale du formulaire */
+    }
+
+    h3.in1 {
+        font-size: 1.5rem; /* Ajuster la taille du titre */
+    }
+
+    input[type="email"],
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 1rem; /* Ajuster la taille des champs de saisie */
+    }
+
+    button[type="submit"] {
+        font-size: 1.05rem; /* Ajuster la taille du bouton */
+    }
+}
+
+/* Sur les écrans de bureau (plus grands que 768px, aucune modification nécessaire) */

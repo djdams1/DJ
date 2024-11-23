@@ -6,15 +6,19 @@
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Crée une grille de 4 colonnes */
+    grid-template-columns: repeat(4, 1fr); /* Crée une grille de 4 colonnes par défaut */
     gap: 20px; /* Espacement entre les images */
     justify-items: center; /* Centre les images dans chaque cellule */
     margin-top: 20px;
 }
+
+/* Titre de la galerie */
 h2 {
-    color:white;
+    color: white;
     font-size: 2rem;
 }
+
+/* Chaque image de la galerie */
 .photo-item {
     width: 100%;
     height: auto;
@@ -23,6 +27,7 @@ h2 {
     overflow: hidden;
 }
 
+/* Image à l'intérieur de chaque photo-item */
 .photo-item img {
     width: 100%;
     height: auto;
@@ -36,6 +41,7 @@ h2 {
     transform: scale(1.05); /* Agrandir l'image lors du survol */
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
+
 /* Style pour la lightbox (zone de fond sombre) */
 #lightbox {
     display: none; /* Masquer la lightbox par défaut */
@@ -63,4 +69,42 @@ h2 {
 /* Ajouter un effet de zoom à l'ouverture de la lightbox */
 #lightbox.show #lightbox-img {
     transform: scale(1); /* Zoom complet à l'ouverture */
+}
+
+/* Media Query pour les tablettes (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr); /* Grille de 2 colonnes */
+        gap: 10px; /* Espacement réduit entre les images */
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Taille du titre réduite pour les écrans plus petits */
+    }
+
+    .photo-item {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Ajustement des images dans la lightbox */
+    #lightbox-img {
+        max-width: 85%; /* Réduit la taille de l'image dans la lightbox */
+    }
+}
+
+/* Media Query pour les petits écrans (mobiles) */
+@media screen and (max-width: 480px) {
+    .photo-grid {
+        grid-template-columns: 1fr; /* Grille de 1 colonne sur les petits écrans */
+        gap: 8px; /* Espacement encore plus réduit */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Taille du titre encore plus petite */
+    }
+
+    /* Ajustement des images dans la lightbox */
+    #lightbox-img {
+        max-width: 80%; /* Réduit encore la taille de l'image dans la lightbox */
+    }
 }

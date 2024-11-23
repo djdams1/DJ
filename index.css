@@ -1,14 +1,19 @@
+/* Section des nouvelles */
 #news {
     margin: 20px;
     padding: 10px;
     color: #ffffff;
 }
+
+/* Titre de la section des nouvelles */
 #news h2 {
     margin: 0 0 15px;
     color: #fff;
     font-size: 2rem;
     text-align: center;
 }
+
+/* Article de nouvelles */
 .news-item {
     border: 2px solid #ddd;
     padding: 15px;
@@ -27,10 +32,51 @@
 
 .news-item a {
     color: #007BFF;
-    
     text-decoration: none;
 }
 
 .news-item a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries pour les petits écrans (tablettes et mobiles) */
+@media screen and (max-width: 768px) {
+    #news h2 {
+        font-size: 1.5rem; /* Réduit la taille du titre */
+    }
+
+    .news-item {
+        padding: 10px; /* Réduit le padding des items pour plus de place */
+    }
+
+    .news-item h3 {
+        font-size: 1.2rem; /* Ajuste la taille des titres des articles */
+    }
+
+    .news-item p {
+        font-size: 0.9rem; /* Réduit la taille de la police des paragraphes */
+    }
+}
+
+/* Media Query pour les très petits écrans (mobiles très petits) */
+@media screen and (max-width: 480px) {
+    #news h2 {
+        font-size: 1.2rem; /* Plus petit pour les très petits écrans */
+    }
+
+    .news-item {
+        padding: 8px; /* Réduit encore le padding des items */
+    }
+
+    .news-item h3 {
+        font-size: 1rem; /* Plus petit pour les petits écrans */
+    }
+
+    .news-item p {
+        font-size: 0.8rem; /* Plus petit pour économiser de l'espace */
+    }
+
+    .news-item a {
+        font-size: 0.9rem; /* Réduit la taille de la police du lien */
+    }
 }

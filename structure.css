@@ -2,7 +2,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: black !important;
-    
 }
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
@@ -16,7 +15,6 @@ header {
     background-color: #272727; /* Couleur de fond (optionnelle) */
 }
 
-
 .logo h1 a {
     text-decoration: none; /* Supprime le soulignement */
     color: #7700ff; /* Couleur initiale du titre */
@@ -26,6 +24,7 @@ header {
     border-radius: 5px; /* Coins arrondis */
     transition: all 0.3s ease; /* Effet de transition fluide */
 }
+
 /* Logo container */
 .logo {
     display: flex; /* Aligne le titre et l'image côte à côte */
@@ -53,10 +52,9 @@ header {
     margin-left: -20px;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1); /* Agrandit légèrement le titre */
 }
-
 
 /* Navigation styles */
 nav ul {
@@ -64,6 +62,8 @@ nav ul {
     list-style: none; /* Supprime les puces */
     margin: 0; /* Supprime la marge */
     padding: 0; /* Supprime le padding */
+    flex-wrap: nowrap; /* Empêche le passage en ligne verticale sur petits écrans */
+    justify-content: flex-start; /* Aligne les éléments de gauche à droite */
 }
 
 nav ul li {
@@ -90,6 +90,7 @@ nav ul li a:hover {
     border-color: #ffffff; /* Change la couleur de la bordure */
     transform: scale(1.5); /* Agrandit légèrement la boîte */
 }
+
 /* Footer styles */
 footer {
     background-color: #272727; /* Couleur de fond identique au header */
@@ -134,3 +135,58 @@ footer nav ul li a:hover {
     transform: scale(1.1); /* Agrandit légèrement le titre */
 }
 
+/* Media Query pour les appareils mobiles */
+@media screen and (max-width: 768px) {
+    /* Ajuste la taille du logo et le titre */
+    .logo h1 {
+        font-size: 1.2rem; /* Plus petit sur les petits écrans */
+    }
+
+    .logo img {
+        width: 50px; /* Réduit la taille de l'image */
+    }
+
+    /* Navigation reste en ligne mais les éléments sont réduits */
+    nav ul {
+        justify-content: space-between; /* Réduit l'espacement entre les éléments */
+        flex-wrap: nowrap; /* Toujours pas de retour à la ligne */
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Réduit l'espacement entre les liens */
+    }
+
+    nav ul li a {
+        padding: 8px 12px; /* Réduit l'espacement interne des liens */
+        font-size: 0.9rem; /* Réduit la taille de la police */
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 0; /* Réduit l'espacement vertical du footer */
+    }
+
+    footer nav ul li a {
+        font-size: 0.8rem; /* Réduit la taille de la police pour le footer */
+    }
+}
+
+/* Media Query pour les très petits écrans (mobiles très petits) */
+@media screen and (max-width: 480px) {
+    .logo h1 {
+        font-size: 1rem; /* Encore plus petit */
+    }
+
+    .logo img {
+        width: 40px; /* Encore plus petit pour les écrans très petits */
+    }
+
+    nav ul li a {
+        padding: 5px 10px; /* Espacement encore plus petit pour les liens */
+        font-size: 0.5rem; /* Réduit encore la taille des textes */
+    }
+
+    footer nav ul li a {
+        font-size: 0.7rem; /* Encore plus petit pour les liens du footer */
+    }
+}

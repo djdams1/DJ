@@ -4,7 +4,7 @@ async function loadNews() {
 
     try {
         // Charger les données du fichier JSON
-        const response = await fetch('/src/data/news.json'); // Assurez-vous du chemin
+        const response = await fetch('./src/data/news.json'); // Assurez-vous du chemin
         const news = await response.json();
 
         // Trier les actualités par date (si elles ne sont pas déjà triées)
