@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacte | DJ Dam's</title>
+    <title>Contact | DJ Dam's</title>
     <link rel="stylesheet" href="contacte.css">
     <link rel="stylesheet" href="structure.css">
     <link rel="icon"  href="./src/img/Designer(5)-Photoroom.png">
@@ -16,7 +16,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li><a href="actu.html">Actu</a></li>
                 <li><a href="contracte.html">Contact</a></li>
@@ -26,25 +26,31 @@
     <main>
 
         <form action="https://api.web3forms.com/submit" method="POST">
-            <h3 class="in1">Formlaire de contact<hr></h3>
-            <p class="obli">les champs avec * sont obligatoires</p>
+            <h3 class="in1">Formulaire de contact<hr></h3>
+            <p class="obli">Les champs avec * sont obligatoires</p>
             <input type="hidden" name="access_key" value="2254fc9d-6769-42dc-b5d9-2b4a76fb45ef" class="in2"> 
             <input type="hidden" name="redirect" value="https://djdams1.github.io/DJ/contracte.html">
-            <label>Email*</label><br>
-            <input type="email" name="email" required  class="in2" > <br>
-            <label>Nom*</label><br>
-            <input type="text" name="Nom" required  class="in2" > <br>
-            <label>Prénom*</label> <br>
-            <input type="text" name="Prénom" required  class="in2"> <br>
-            <label>Date de randez-vous</label><br>
-            <input type="date" name="Date de rdv"><br>
-            <label>Message*</label> <br>
-            <textarea name="message" cols="30" rows="10" required placeholder="Pose ta question ou fixer un randez-vous" class="in3" ></textarea>
+            
+            <label for="email">Email*</label><br>
+            <input type="email" name="email" id="email" required class="in2"> <br>
+            
+            <label for="nom">Nom*</label><br>
+            <input type="text" name="Nom" id="nom" required class="in2"> <br>
+            
+            <label for="prenom">Prénom*</label><br>
+            <input type="text" name="Prénom" id="prenom" required class="in2"> <br>
+            
+            <label for="date-rdv">Date de rendez-vous</label><br>
+            <input type="date" name="Date de rdv" id="date-rdv"><br>
+            
+            <label for="message">Message*</label><br>
+            <textarea name="message" id="message" cols="30" rows="10" required placeholder="Pose ta question ou fixe un rendez-vous" class="in3"></textarea>
             
             <button type="submit" class="btn1">Envoyer</button>
-
+    
         </form>
     </main>
+    
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 DJ Dam's. Tous droits réservés.</p>
