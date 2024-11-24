@@ -1,4 +1,4 @@
-/* Section des nouvelles */
+
 #news {
     margin: 20px;
     padding: 10px;
@@ -11,6 +11,7 @@
     color: #fff;
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Article de nouvelles */
@@ -144,6 +145,28 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+#qui {
+    display: flex; /* Active le modèle Flexbox */
+    flex-direction: column; /* Aligne les enfants en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Aligne le texte */
+     /* Ajoute un peu d'espace autour */
+}
+
+#qui h2 {
+    margin-bottom: 20px; /* Espace entre le titre et le bouton */
+}
+
+#qui p {
+    width: 80%;
+    text-align: center;
+    line-height: 2; /* 1.5x la hauteur normale */
+}
+hr {
+    margin: 50px;
+}
+
 /* Media Queries pour le carrousel */
 @media screen and (max-width: 768px) {
     #carousel {
@@ -155,6 +178,7 @@
         height: 30px;
         font-size: 1.2rem; /* Réduit la taille des boutons */
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -167,4 +191,26 @@
         height: 25px;
         font-size: 1rem; /* Réduit davantage la taille des boutons */
     }
+}
+.button {
+    display: inline-block; /* Assure que le bouton reste à sa taille naturelle */
+    padding: 15px 30px; /* Espace interne */
+    border: solid 2px white;
+    color: white; /* Couleur du texte */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 16px; /* Taille du texte */
+    text-align: center; /* Centre le texte */
+    cursor: pointer; /* Curseur pointeur */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.button:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
+    background-color: #7700ff; /* Changement de couleur au survol */
+}
+
+.button a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
 }

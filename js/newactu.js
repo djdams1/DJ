@@ -51,7 +51,9 @@ async function loadNews() {
             displayNews(filteredNews); // Affiche les actualités filtrées
         });
     } catch (error) {
-        container.innerHTML = "<p>Impossible de charger les actualités pour le moment.</p>";
+        container.innerHTML = '<p>Impossible de charger les actualités pour le moment.</p>';
+
+
         console.error("Erreur lors du chargement des news :", error);
     }
 
