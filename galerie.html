@@ -27,28 +27,33 @@
     <main>
         <section class="gallery">
             <h2>Galerie de Photos et vidéos</h2>
-
-            <!-- Grille d'images -->
+            <select id="filter-category">
+                <option value="all">Tous</option>
+                <option value="son">Son</option>
+                <option value="lum">Lumière</option>
+            </select>
+            <br>
+            <label for="filter-subcategory" class="label-hiddenn">Sous-catégorie</label>
+            <select id="filter-subcategory" class="select-hidden" disabled>
+            </select>
+            
             <div class="photo-grid">
-                <div class="photo-item">
-                    <img src="./src/img/Designer(5)-Photoroom.png" alt="Photo 1" class="photo-thumb">
+                <div class="photo-item son son-1">
+                    <img src="https://www.sony.ch/image/24db1256c3776cb83ab051a84c4520f7?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF" alt="Photo 1" class="photo-thumb">
                 </div>
-                <div class="photo-item">
-                    <img src="./src/img/Designer(5)-Photoroom.png" alt="Photo 2" class="photo-thumb">
+                <div class="photo-item son son-2">
+                    <img src="https://ch.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw7a192359/JBL_Partybox_Encore_Hero_1xMic_1605x1605px.png?sw=320&sh=320" alt="Photo 2" class="photo-thumb">
                 </div>
-                <div class="photo-item">
-                    <img src="./src/img/Designer(5)-Photoroom.png" alt="Photo 3" class="photo-thumb">
+                <div class="photo-item lum lum-1">
+                    <img src="https://kosilum.com/21729-thickbox_default/lampe-a-poser-marbre-et-verre-blanc-estrela.jpg" alt="Photo 3" class="photo-thumb">
                 </div>
-                <div class="photo-item">
-                    <img src="./src/img/Designer(5)-Photoroom.png" alt="Photo 4" class="photo-thumb">
+                <div class="photo-item lum lum-2">
+                    <img src="https://www.son-art.ch/shop/17384-large_default/jb-systems-clubwash.jpg" alt="Photo 4" class="photo-thumb">
                 </div>
-                
-                <!-- Ajoute d'autres images ici -->
             </div>
         </section>
     </main>
 
-    <!-- Lightbox modale -->
     <div id="lightbox" class="lightbox">
         <span class="close" onclick="closeLightbox()">&times;</span>
         <img id="lightbox-img" src="" alt="Image agrandie">
@@ -68,5 +73,6 @@
     </footer>
 
     <script src="./js/galerie.js"></script>
+    <script src="./js/filtre.js"></script>
 </body>
 </html>

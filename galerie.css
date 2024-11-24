@@ -2,30 +2,66 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff; /* Texte en blanc */
+    background-color: #121212;
+    color: #fff;
 }
-/* Style de base pour la galerie */
-.gallery {
+
+h2 {
+    color: #fff;
+    font-size: 2rem;
     text-align: center;
-    margin: 20px;
+    margin-top: 30px;
+}
+
+label {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.filter-bar {
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filter-category,
+#filter-subcategory {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 220px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #444;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+#filter-category:focus,
+#filter-subcategory:focus {
+    outline: none;
+    border-color: #7700ff;
+}
+
+.gallery {
+    margin: 0 20px;
+    text-align: center;
 }
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Crée une grille de 4 colonnes par défaut */
-    gap: 20px; /* Espacement entre les images */
-    justify-items: center; /* Centre les images dans chaque cellule */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
     margin-top: 20px;
 }
 
-/* Titre de la galerie */
-h2 {
-    color: white;
-    font-size: 2rem;
-}
-
-/* Chaque image de la galerie */
 .photo-item {
+    display: none;
     width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
@@ -33,24 +69,26 @@ h2 {
     overflow: hidden;
 }
 
-/* Image à l'intérieur de chaque photo-item */
+.photo-item.show {
+    display: block;
+}
+
 .photo-item img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-/* Effet au survol des images */
 .photo-item:hover {
-    transform: scale(1.05); /* Agrandir l'image lors du survol */
+    transform: scale(1.05);
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Style pour la lightbox (zone de fond sombre) */
 #lightbox {
-    display: none; /* Masquer la lightbox par défaut */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,58 +97,104 @@ h2 {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Initialement invisible */
-    transition: opacity 0.3s ease; /* Animation de transition */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-/* Style pour l'image dans la lightbox */
+#lightbox.show {
+    display: flex;
+    opacity: 1;
+}
+
 #lightbox-img {
     max-width: 90%;
     max-height: 80%;
     object-fit: contain;
-    transform: scale(0.8); /* Démarrer l'image avec un léger effet de zoom */
-    transition: transform 0.3s ease; /* Animation pour le zoom */
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
 }
 
-/* Ajouter un effet de zoom à l'ouverture de la lightbox */
 #lightbox.show #lightbox-img {
-    transform: scale(1); /* Zoom complet à l'ouverture */
+    transform: scale(1);
 }
 
-/* Media Query pour les tablettes (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .photo-grid {
-        grid-template-columns: repeat(2, 1fr); /* Grille de 2 colonnes */
-        gap: 10px; /* Espacement réduit entre les images */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
-
+    .filter-bar {
+        flex-direction: column;
+        align-items: center;
+    }
     h2 {
-        font-size: 1.8rem; /* Taille du titre réduite pour les écrans plus petits */
+        font-size: 1.8rem;
     }
 
-    .photo-item {
-        transition: transform 0.3s ease-in-out;
+    #filter-category,
+    #filter-subcategory {
+        width: 180px;
+        margin-bottom: 10px;
     }
 
-    /* Ajustement des images dans la lightbox */
     #lightbox-img {
-        max-width: 85%; /* Réduit la taille de l'image dans la lightbox */
+        max-width: 85%;
     }
 }
 
-/* Media Query pour les petits écrans (mobiles) */
 @media screen and (max-width: 480px) {
     .photo-grid {
-        grid-template-columns: 1fr; /* Grille de 1 colonne sur les petits écrans */
-        gap: 8px; /* Espacement encore plus réduit */
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     h2 {
-        font-size: 1.5rem; /* Taille du titre encore plus petite */
+        font-size: 1.5rem;
     }
 
-    /* Ajustement des images dans la lightbox */
-    #lightbox-img {
-        max-width: 80%; /* Réduit encore la taille de l'image dans la lightbox */
+    #filter-category,
+    #filter-subcategory {
+        width: 160px;
     }
+
+    #lightbox-img {
+        max-width: 80%;
+    }
+}
+
+label[for="filter-subcategory"] {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.filter-bar select,
+.filter-bar label {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.filter-bar.select-hidden,
+.filter-bar.label-hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
+.select-hidden {
+    display: none;
+}
+
+.label-hiddenn {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.photo-item {
+    display: none;
 }
