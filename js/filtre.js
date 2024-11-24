@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const categorySelect = document.getElementById('filter-category');
     const subcategorySelect = document.getElementById('filter-subcategory');

@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 // Fonction pour charger les news depuis le fichier JSON
 async function loadNews() {
     const container = document.getElementById("news-container");
