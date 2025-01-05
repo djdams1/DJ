@@ -5,7 +5,9 @@ body {
     padding: 0;
     background-color: #000000; /* Fond sombre pour un contraste agréable */
     color: #fff; /* Texte en blanc */
-    height: 100%
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s ease;
 }
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
@@ -216,4 +218,21 @@ footer nav ul li a:hover {
     background-color: #7700ff60; /* Pas de fond */
     color: #ffffff; /* Texte violet */
 }
+.fade-out {
+    opacity: 0;
+}
 
+/* Fade-in effect when content appears */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
