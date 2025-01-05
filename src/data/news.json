@@ -13,11 +13,11 @@
     "content": "Quoi de neuf ?",
     "link": "actu.html"
   },
- {
+  {
     "title": "Premier single",
     "date": "2025-01-05",
-    "txt": "Un petit single sur le thème de la Suisse est désormais disponible.",
+    "txt": "Un petit single sur le thème de la Suisse est désormais disponible. <a href=\"https://open.spotify.com/intl-fr/artist/0RzRKcdTuP9gprvbZDs0ic?si=BYopThyNQYmgYzKVpspxHw\">Spotify</a>",
     "content": "Dispo sur toutes les plateformes",
-    "link": "https://open.spotify.com/intl-fr/artist/0RzRKcdTuP9gprvbZDs0ic?si=BYopThyNQYmgYzKVpspxHw"
+    "link": "actu.html"
   }
 ]
