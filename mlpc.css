@@ -1,0 +1,22 @@
+main{
+    margin: 2rem;
+    
+}
+h1, h2, h3, h4, h5, h6{
+    color: darkgray;
+}
+strong{
+    color: #3a0477;
+}
+/* Change la couleur de la sélection */
+::selection {
+    background-color: #7700ff60; /* Pas de fond */
+    color: #ffffff; /* Texte violet */
+}
+
+/* Pour Firefox (optionnel, souvent pas nécessaire car ::selection est supporté) */
+::-moz-selection {
+    background-color: #7700ff60; /* Pas de fond */
+    color: #ffffff; /* Texte violet */
+}
+

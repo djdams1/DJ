@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #000000; /* Fond sombre pour un contraste agréable */
     color: #fff; /* Texte en blanc */
+    height: 100%
 }
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
@@ -102,6 +103,18 @@ footer {
     text-align: center; /* Centre le texte */
     border-radius: 5px; /* Coins arrondis */
     transition: all 0.3s ease; /* Animation fluide pour les changements */
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Fait que le conteneur occupe au moins 100% de la fenêtre */
+}
+
+.main-content {
+    flex: 1; /* Permet au contenu principal de prendre tout l'espace disponible */
 }
 
 /* Contenu du footer */
@@ -193,3 +206,14 @@ footer nav ul li a:hover {
         font-size: 0.7rem; /* Encore plus petit pour les liens du footer */
     }
 }
+::selection {
+    background-color: #7700ff60; /* Pas de fond */
+    color: #ffffff; /* Texte violet */
+}
+
+/* Pour Firefox (optionnel, souvent pas nécessaire car ::selection est supporté) */
+::-moz-selection {
+    background-color: #7700ff60; /* Pas de fond */
+    color: #ffffff; /* Texte violet */
+}
+
