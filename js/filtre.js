@@ -15,15 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
         let options = [];
         if (category === 'son') {
             options = [
-                { value: 'son-1', label: 'Son 1' },
-                { value: 'son-2', label: 'Son 2' },
-                { value: 'son-3', label: 'Son 3' }
+                { value: 'dj', label: 'DJing' },
+                { value: 'hp', label: 'Haut-parleurs' },
+                { value: 'autreson', label: 'Autres' }
             ];
         } else if (category === 'lum') {
             options = [
-                { value: 'lum-1', label: 'Lumière 1' },
-                { value: 'lum-2', label: 'Lumière 2' },
-                { value: 'lum-3', label: 'Lumière 3' }
+                { value: 'par', label: 'Pars Leds' },
+                { value: 'parm', label: 'Pars Leds Moteurisé' },
+                { value: 'lyre', label: 'Lyres' },
+                { value: 'scan', label: 'Scanners' },
+                { value: 'fume', label: 'Machines a Fumée' },
+                { value: 'autrelum', label: 'Autres' }
+            ];
+        } else if (category === 'presta') {
+            options = [
+                { value: 'camps', label: 'Boom de camps' },
+                { value: 'anniv', label: 'Anniversaire' }
+                // ,
+                // { value: 'presta-3', label: 'Prestation 3' }
             ];
         }
 
