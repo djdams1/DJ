@@ -236,3 +236,6 @@ footer nav ul li a:hover {
         opacity: 1;
     }
 }
+.cmpboxrecall {
+    display: none;
+}
