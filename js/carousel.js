@@ -1,4 +1,5 @@
 // Sélectionner les éléments
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
 const prevButton = document.getElementById('prevBtn');
