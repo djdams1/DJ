@@ -1,16 +1,23 @@
 [
-    {
-      "title": "Mise à jour du site",
-      "date": "2024-11-23",
-      "txt": "Je pense que le dév a déjà fait beaucoup pour ce site sur les 2 derniers jours. Il a créé tout ce que tu vois en ce moment et un outil que j'utilise pour écrire ce message, car oui, il m'a également créé une app qui me permet de publier des news 🤭\n1000 merci à toi ❤️",
-      "content": "Le site est-il fini ?",
-      "link": "actu.html"
-    },
-    {
-      "title": "Ajout sur le site",
-      "date": "2024-11-24",
-      "txt": "Le pied de page a été mis a jour (tous ce qui est Mentions légales et Politique de Confidentialité ont été ajouté. des filtres ont été ajouté dans la galerie. l'accueil a été modifié pour y a jouter le qui somme nous",
-      "content": "Quoi de neuf ?",
-      "link": "actu.html"
-    }
-  ]
+  {
+    "title": "Mise à jour du site",
+    "date": "2024-11-23",
+    "txt": "Je pense que le dév a déjà fait beaucoup pour ce site sur les 2 derniers jours. Il a créé tout ce que tu vois en ce moment et un outil que j'utilise pour écrire ce message, car oui, il m'a également créé une app qui me permet de publier des news 🤭\n1000 merci à toi ❤️",
+    "content": "Le site est-il fini ?",
+    "link": "actu.html"
+  },
+  {
+    "title": "Ajout sur le site",
+    "date": "2024-11-24",
+    "txt": "Le pied de page a été mis a jour (tous ce qui est Mentions légales et Politique de Confidentialité ont été ajouté. des filtres ont été ajouté dans la galerie. l'accueil a été modifié pour y a jouter le qui somme nous",
+    "content": "Quoi de neuf ?",
+    "link": "actu.html"
+  },
+ {
+    "title": "Premier single",
+    "date": "2025-01-05",
+    "txt": "Un petit single sur le thème de la Suisse est désormais disponible.",
+    "content": "Dispo sur toutes les plateformes",
+    "link": "https://open.spotify.com/intl-fr/artist/0RzRKcdTuP9gprvbZDs0ic?si=BYopThyNQYmgYzKVpspxHw"
+  }
+]
